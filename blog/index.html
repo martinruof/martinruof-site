@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Martin Ruof — Identity Alignment for High-Achievers</title>
+  <meta name="description" content="Articles on identity alignment, executive coaching, leadership burnout, relationship strain from success, and finding yourself after achievement. By Martin Ruof.">
+  <link rel="canonical" href="https://martinruof.com/blog">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .page-hero { min-height: 40vh; }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2.5rem;
+      margin-top: 3rem;
+    }
+
+    .blog-card {
+      border: 1px solid rgba(26, 26, 26, 0.08);
+      background: var(--marble-cream);
+      padding: 2.5rem;
+      transition: all 0.4s ease;
+    }
+
+    .blog-card:hover {
+      border-color: rgba(201, 169, 110, 0.3);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+    }
+
+    .blog-card-category {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent-copper);
+      margin-bottom: 1rem;
+    }
+
+    .blog-card h3 {
+      font-size: 1.35rem;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+    }
+
+    .blog-card h3 a {
+      color: inherit;
+      transition: color 0.3s ease;
+    }
+
+    .blog-card h3 a:hover {
+      color: var(--accent-gold);
+    }
+
+    .blog-card p {
+      font-size: 0.95rem;
+      color: var(--text-dark-muted);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .blog-card-meta {
+      font-size: 0.8rem;
+      color: var(--text-dark-muted);
+      letter-spacing: 0.02em;
+    }
+
+    .blog-categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .blog-category-tag {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      padding: 0.5rem 1.25rem;
+      border: 1px solid rgba(26, 26, 26, 0.15);
+      color: var(--text-dark-muted);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .blog-category-tag:hover,
+    .blog-category-tag.active {
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+      background: var(--accent-gold-dim);
+    }
+
+    @media (max-width: 768px) {
+      .blog-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Martin Ruof</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/work-with-me.html">Work With Me</a></li>
+        <li><a href="/pages/assessment.html">Free Assessment</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/pages/ai-coach.html" class="nav-portal">AI Coach Portal</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero page-hero">
+    <div class="hero-marble-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-headline">
+        <span class="hero-accent">Insights</span>
+      </h1>
+      <p class="hero-subheadline">
+        Articles on identity, alignment, leadership, and the invisible patterns
+        that keep high-achievers stuck.
+      </p>
+    </div>
+  </section>
+
+  <!-- BLOG LISTING -->
+  <section class="section section-offers">
+    <div class="container">
+
+      <div class="blog-categories">
+        <span class="blog-category-tag active">All</span>
+        <span class="blog-category-tag">Identity & Alignment</span>
+        <span class="blog-category-tag">Leadership</span>
+        <span class="blog-category-tag">Relationships</span>
+        <span class="blog-category-tag">Success & Fulfillment</span>
+        <span class="blog-category-tag">Coaching</span>
+      </div>
+
+      <div class="blog-grid">
+
+        <!-- ARTICLE 1 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Identity & Alignment</span>
+          <h3><a href="/blog/why-successful-people-feel-empty.html">Why Successful People Feel Empty: The Hidden Cost of High Achievement</a></h3>
+          <p>You’ve achieved everything you set out to achieve. So why does it feel like something’s missing? The answer isn’t what most self-help will tell you.</p>
+          <span class="blog-card-meta">8 min read</span>
+        </article>
+
+        <!-- ARTICLE 2 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Leadership</span>
+          <h3><a href="/blog/executive-burnout-vs-identity-misalignment.html">Executive Burnout vs. Identity Misalignment: How to Tell the Difference</a></h3>
+          <p>Burnout and identity misalignment feel similar but require completely different solutions. One needs rest. The other needs something far more honest.</p>
+          <span class="blog-card-meta">7 min read</span>
+        </article>
+
+        <!-- ARTICLE 3 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Relationships</span>
+          <h3><a href="/blog/why-success-is-ruining-your-marriage.html">Why Your Success Is Ruining Your Marriage (And What to Do About It)</a></h3>
+          <p>The same identity that built your career may be destroying your closest relationships. Here’s why — and what the real solution looks like.</p>
+          <span class="blog-card-meta">9 min read</span>
+        </article>
+
+        <!-- ARTICLE 4 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Identity & Alignment</span>
+          <h3><a href="/blog/the-roles-we-play-without-knowing.html">The Roles We Play Without Knowing: How Childhood Survival Strategies Run Your Adult Life</a></h3>
+          <p>The Strong One. The Fixer. The Provider. These identities were brilliant adaptations. Now they’re invisible prisons. Here’s how to see them.</p>
+          <span class="blog-card-meta">10 min read</span>
+        </article>
+
+        <!-- ARTICLE 5 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Coaching</span>
+          <h3><a href="/blog/coaching-vs-therapy-for-high-achievers.html">Coaching vs. Therapy for High-Achievers: Which One Do You Actually Need?</a></h3>
+          <p>You’ve probably done therapy. It helped, but you hit a ceiling. Here’s why coaching picks up where therapy leaves off for driven professionals.</p>
+          <span class="blog-card-meta">7 min read</span>
+        </article>
+
+        <!-- ARTICLE 6 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Success & Fulfillment</span>
+          <h3><a href="/blog/midlife-crisis-or-identity-shift.html">It’s Not a Midlife Crisis. It’s an Identity Shift.</a></h3>
+          <p>Society calls it a midlife crisis. Psychology calls it individuation. Here’s what it actually is — and why it’s the most important transition of your life.</p>
+          <span class="blog-card-meta">8 min read</span>
+        </article>
+
+        <!-- ARTICLE 7 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Leadership</span>
+          <h3><a href="/blog/why-leadership-coaching-doesnt-work.html">Why Most Leadership Coaching Doesn’t Work (And What to Do Instead)</a></h3>
+          <p>You’ve been to the seminars, read the books, hired the coaches. Nothing sticks. The problem isn’t the coaching — it’s what the coaching is addressing.</p>
+          <span class="blog-card-meta">7 min read</span>
+        </article>
+
+        <!-- ARTICLE 8 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Identity & Alignment</span>
+          <h3><a href="/blog/what-is-identity-alignment.html">What Is Identity Alignment? A Guide for Professionals Who’ve Outgrown Their Success</a></h3>
+          <p>Identity alignment is the process of closing the gap between who you’ve become and how you’re living. Here’s everything you need to know.</p>
+          <span class="blog-card-meta">11 min read</span>
+        </article>
+
+        <!-- ARTICLE 9 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Relationships</span>
+          <h3><a href="/blog/how-to-be-vulnerable-as-a-leader.html">How to Be Vulnerable as a Leader Without Losing Respect</a></h3>
+          <p>Vulnerability feels like weakness to high-performers. But it’s actually the skill that separates good leaders from ones people would follow anywhere.</p>
+          <span class="blog-card-meta">8 min read</span>
+        </article>
+
+        <!-- ARTICLE 10 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Success & Fulfillment</span>
+          <h3><a href="/blog/successful-but-unhappy.html">Successful but Unhappy: Why Achievement Alone Will Never Be Enough</a></h3>
+          <p>You thought the next milestone would bring fulfillment. It didn’t. Here’s the uncomfortable truth about why success and happiness aren’t the same thing.</p>
+          <span class="blog-card-meta">9 min read</span>
+        </article>
+
+        <!-- ARTICLE 11 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Identity & Alignment</span>
+          <h3><a href="/blog/hidden-beliefs-running-your-life.html">The Hidden Beliefs Running Your Life: How to Find and Release Them</a></h3>
+          <p>"If I rest, I’m weak." "If I’m not productive, I’m worthless." These aren’t personality traits. They’re invisible agreements you made as a child.</p>
+          <span class="blog-card-meta">10 min read</span>
+        </article>
+
+        <!-- ARTICLE 12 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Leadership</span>
+          <h3><a href="/blog/ceo-loneliness-and-isolation.html">The Loneliness of Leadership: Why CEOs Feel Isolated and What to Do About It</a></h3>
+          <p>The higher you climb, the fewer people you can be honest with. That isolation isn’t a side effect of success — it’s a symptom of misalignment.</p>
+          <span class="blog-card-meta">7 min read</span>
+        </article>
+
+        <!-- ARTICLE 13 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Coaching</span>
+          <h3><a href="/blog/ai-coaching-vs-human-coaching.html">AI Coaching vs. Human Coaching: What Works, What Doesn’t, and What’s Next</a></h3>
+          <p>AI coaching is exploding. But most of it is generic and surface-level. Here’s what real AI coaching looks like — and when you still need a human.</p>
+          <span class="blog-card-meta">8 min read</span>
+        </article>
+
+        <!-- ARTICLE 14 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Relationships</span>
+          <h3><a href="/blog/rebuilding-relationship-with-your-kids.html">How to Rebuild a Relationship With Your Kids After Years of Being "The Provider"</a></h3>
+          <p>You were so focused on providing for your family that you forgot to be present for them. It’s not too late — but the fix isn’t what you think.</p>
+          <span class="blog-card-meta">9 min read</span>
+        </article>
+
+        <!-- ARTICLE 15 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Success & Fulfillment</span>
+          <h3><a href="/blog/why-rest-doesnt-fix-the-tiredness.html">Why Rest Doesn’t Fix the Tiredness: Understanding Internal Exhaustion</a></h3>
+          <p>You took the vacation. You slept in. You unplugged. And you’re still exhausted. The tiredness isn’t physical — it’s the cost of being someone you’re not.</p>
+          <span class="blog-card-meta">7 min read</span>
+        </article>
+
+        <!-- ARTICLE 16 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Identity & Alignment</span>
+          <h3><a href="/blog/carl-rogers-congruence-theory-explained.html">Carl Rogers’ Congruence Theory: Why the Gap Between Self and Role Makes You Suffer</a></h3>
+          <p>In the 1950s, Carl Rogers identified the core cause of human suffering: the gap between who you are and who you think you should be. It’s more relevant than ever.</p>
+          <span class="blog-card-meta">10 min read</span>
+        </article>
+
+        <!-- ARTICLE 17 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Leadership</span>
+          <h3><a href="/blog/high-achiever-imposter-syndrome.html">Beyond Imposter Syndrome: Why High-Achievers Feel Like Frauds (And It’s Not What You Think)</a></h3>
+          <p>It’s not that you’re faking your competence. It’s that you’re performing an identity that no longer matches who you are. That’s a different problem entirely.</p>
+          <span class="blog-card-meta">8 min read</span>
+        </article>
+
+        <!-- ARTICLE 18 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Coaching</span>
+          <h3><a href="/blog/signs-you-need-identity-coaching.html">7 Signs You’ve Outgrown Your Identity (And Need Something Deeper Than Traditional Coaching)</a></h3>
+          <p>Not all stuck is the same. Here are the specific signs that your problem isn’t strategy, skill, or discipline — it’s who you’re being.</p>
+          <span class="blog-card-meta">9 min read</span>
+        </article>
+
+        <!-- ARTICLE 19 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Relationships</span>
+          <h3><a href="/blog/how-to-save-your-marriage-as-a-ceo.html">How to Save Your Marriage When Your Career Is Taking Everything</a></h3>
+          <p>Your partner isn’t asking you to achieve less. They’re asking you to be present more. Here’s how to close that gap without sacrificing what you’ve built.</p>
+          <span class="blog-card-meta">8 min read</span>
+        </article>
+
+        <!-- ARTICLE 20 -->
+        <article class="blog-card">
+          <span class="blog-card-category">Success & Fulfillment</span>
+          <h3><a href="/blog/what-comes-after-you-make-it.html">What Comes After You "Make It"? The Question Nobody Prepares You For</a></h3>
+          <p>You spent decades climbing. Now you’re at the top and the view isn’t what you expected. Here’s the question you should have been asking all along.</p>
+          <span class="blog-card-meta">8 min read</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-final-cta">
+    <div class="container">
+      <h2 class="section-heading">Ready to See Where You’re Misaligned?</h2>
+      <p class="section-intro">
+        The free assessment takes under 10 minutes and will show you exactly
+        where the gap lives in your life.
+      </p>
+      <a href="/pages/assessment.html" class="btn btn-primary btn-large">Take the Free Assessment</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Martin Ruof</span>
+          <p class="footer-tagline">Executive Coaching & Identity Alignment</p>
+          <p class="footer-philosophy">"You’re not broken. You’re buried. Let’s set you free."</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="/pages/about.html">About Martin</a></li>
+            <li><a href="/pages/work-with-me.html">Work With Me</a></li>
+            <li><a href="/pages/assessment.html">Free Assessment</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/ai-coach.html">AI Coach Portal</a></li>
+          </ul>
+        </div>
+        <div class="footer-connect">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://instagram.com/martinruof" target="_blank">Instagram</a></li>
+            <li><a href="https://linkedin.com/in/martinruof" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:martin@martinruof.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Martin Ruof Enterprises. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
