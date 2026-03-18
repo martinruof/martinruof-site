@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Assessment | Martin Ruof</title>
+  <meta name="description" content="Take the free identity alignment assessment. Find out where you're misaligned in under 10 minutes. From Martin Ruof.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body { background: var(--marble-black); }
+
+    .mc-landing {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 2rem;
+    }
+
+    .mc-landing .hero-marble-overlay {
+      position: absolute;
+      inset: 0;
+    }
+
+    .mc-card {
+      position: relative;
+      z-index: 2;
+      max-width: 580px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .mc-logo {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--text-light);
+      letter-spacing: 0.02em;
+      margin-bottom: 3rem;
+      display: block;
+    }
+
+    .mc-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 500;
+      color: var(--text-light);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .mc-headline span {
+      color: var(--accent-gold);
+      font-style: italic;
+    }
+
+    .mc-subtext {
+      font-size: 1.05rem;
+      color: var(--text-light-muted);
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .mc-features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 2.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .mc-features li {
+      font-size: 0.85rem;
+      color: var(--accent-gold);
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+
+    .mc-cta {
+      display: inline-block;
+      background: var(--accent-gold);
+      color: var(--marble-black);
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 1.25rem 3.5rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      margin-bottom: 2rem;
+    }
+
+    .mc-cta:hover {
+      background: var(--accent-gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(201, 169, 110, 0.3);
+    }
+
+    .mc-note {
+      font-size: 0.85rem;
+      color: var(--text-light-muted);
+      opacity: 0.7;
+    }
+
+    .mc-note a {
+      color: var(--accent-gold);
+      text-decoration: underline;
+    }
+
+    /* ManyChat embed placeholder */
+    .mc-embed-placeholder {
+      background: rgba(255,255,255,0.03);
+      border: 1px dashed rgba(201, 169, 110, 0.3);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      color: var(--text-light-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="mc-landing">
+    <div class="hero-marble-overlay"></div>
+
+    <div class="mc-card">
+      <span class="mc-logo">Martin Ruof</span>
+
+      <h1 class="mc-headline">
+        Find Out Where You're<br><span>Misaligned</span>
+      </h1>
+
+      <p class="mc-subtext">
+        You're successful. You're respected. And something still feels off.
+        Take the free assessment and find out exactly where the gap lives.
+      </p>
+
+      <ul class="mc-features">
+        <li>30 Questions</li>
+        <li>Under 10 Minutes</li>
+        <li>100% Free</li>
+      </ul>
+
+      <!-- ManyChat Integration Point -->
+      <div class="mc-embed-placeholder">
+        [ManyChat 5-Question Mini Survey Embed]<br>
+        <small>This is where the ManyChat widget will be embedded. The mini survey
+        asks 5 quick questions to qualify the lead, then routes them to the full
+        assessment with personalized email follow-up sequences.</small>
+      </div>
+
+      <a href="/pages/assessment.html" class="mc-cta">Take the Full Assessment</a>
+
+      <p class="mc-note">
+        Or <a href="/">visit the full site</a> to learn more about Martin's coaching.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
