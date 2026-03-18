@@ -1,0 +1,25 @@
+{
+  "rewrites": [
+    { "source": "/about", "destination": "/pages/about.html" },
+    { "source": "/work-with-me", "destination": "/pages/work-with-me.html" },
+    { "source": "/assessment", "destination": "/pages/assessment.html" },
+    { "source": "/ai-coach", "destination": "/pages/ai-coach.html" },
+    { "source": "/free-assessment", "destination": "/pages/free-assessment.html" },
+    { "source": "/blog", "destination": "/blog/index.html" }
+  ],
+  "redirects": [
+    { "source": "/congruence-index", "destination": "/assessment", "statusCode": 301 },
+    { "source": "/pages/congruence-index.html", "destination": "/assessment", "statusCode": 301 },
+    { "source": "/identityos", "destination": "/ai-coach", "statusCode": 301 },
+    { "source": "/pages/identityos.html", "destination": "/ai-coach", "statusCode": 301 }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" }
+      ]
+    }
+  ]
+}
