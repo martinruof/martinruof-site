@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal AI Coach | Powered by Your Session with Martin Ruof</title>
+  <meta name="description" content="Your personal AI coaching companion, trained on your actual session with Martin Ruof. Not generic AI — it knows your patterns, your language, your breakthroughs. Available 24/7.">
+  <link rel="canonical" href="https://martinruof.com/ai-coach">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .page-hero { min-height: 60vh; }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .process-step {
+      background: rgba(245, 240, 235, 0.3);
+      border: 1px solid rgba(201, 169, 110, 0.2);
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .process-step .step-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background: var(--accent-gold-dim);
+      border: 2px solid var(--accent-gold);
+      border-radius: 50%;
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 500;
+      color: var(--accent-gold);
+      margin: 0 auto 1rem;
+    }
+
+    .process-step h3 {
+      font-size: 1.125rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-dark);
+    }
+
+    .process-step p {
+      font-size: 0.95rem;
+      color: var(--text-dark-muted);
+      line-height: 1.6;
+    }
+
+    .login-card {
+      background: rgba(245, 240, 235, 0.5);
+      border: 1px solid rgba(201, 169, 110, 0.2);
+      border-radius: 8px;
+      padding: 3rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .login-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: var(--text-dark);
+    }
+
+    .form-group { margin-bottom: 1.5rem; }
+
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid rgba(26, 26, 26, 0.2);
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      background: white;
+      color: var(--text-dark);
+      transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: var(--accent-gold);
+    }
+
+    .login-card .btn {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .login-note {
+      font-size: 0.85rem;
+      color: var(--text-dark-muted);
+      text-align: center;
+      margin-bottom: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(201, 169, 110, 0.2);
+      line-height: 1.6;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+
+    .comparison-col h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      color: var(--text-dark);
+    }
+
+    .comparison-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comparison-col li {
+      padding: 0.75rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      font-size: 0.95rem;
+      color: var(--text-dark-muted);
+      line-height: 1.6;
+    }
+
+    .comparison-col li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 1.1rem;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    .comparison-col.not-this li::before { background: var(--accent-copper); }
+    .comparison-col.this li::before { background: var(--accent-gold); }
+
+    @media (max-width: 768px) {
+      .comparison-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Martin Ruof</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/work-with-me.html">Work With Me</a></li>
+        <li><a href="/pages/assessment.html">Free Assessment</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/pages/ai-coach.html" class="nav-portal">AI Coach Portal</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero page-hero">
+    <div class="hero-marble-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-preheading">AI-Powered Coaching</p>
+      <h1 class="hero-headline">
+        Your Personal AI Coach<br>
+        <span class="hero-accent">Powered by Your Session with Martin</span>
+      </h1>
+      <p class="hero-subheadline">
+        Not generic motivational AI. A coaching companion trained on YOUR actual session,
+        your patterns, your language, your breakthroughs. Available 24/7.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION: WHAT MAKES THIS DIFFERENT — TRANSITIONAL -->
+  <section class="section section-problem">
+    <div class="container">
+      <div class="section-label">Why This Is Different</div>
+      <h2 class="section-heading">AI Coaching That Actually Knows You</h2>
+      <div class="problem-grid">
+        <div class="problem-text">
+          <p>
+            Most AI coaching tools are generic. They pull from broad databases and give
+            you the same advice they'd give anyone. They don't know your story, your
+            patterns, or what keeps you stuck.
+          </p>
+          <p>
+            <strong>Your personal AI coach is different.</strong> It's built on a recorded,
+            analyzed session with Martin — a deep diagnostic conversation about your
+            specific roles, automatic reactions, and hidden beliefs. The AI learns your
+            language, understands your unique challenges, and coaches you using Martin's
+            methodology, calibrated to your life.
+          </p>
+          <p>
+            It's the difference between reading a self-help book and having a coach
+            who knows exactly what you're going through.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION: NOT THIS / THIS — LIGHT -->
+  <section class="section section-method">
+    <div class="marble-light-overlay"></div>
+    <div class="container">
+      <div class="section-label">The Difference</div>
+      <h2 class="section-heading">Generic AI vs. Your Personal AI Coach</h2>
+      <div class="comparison-grid">
+        <div class="comparison-col not-this">
+          <h3>Generic AI Coaching</h3>
+          <ul>
+            <li>Uses the same scripts for everyone</li>
+            <li>Gives broad motivational advice</li>
+            <li>Doesn't know your history or patterns</li>
+            <li>Can't reference your specific breakthroughs</li>
+            <li>Feels like talking to a chatbot</li>
+          </ul>
+        </div>
+        <div class="comparison-col this">
+          <h3>Your Personal AI Coach</h3>
+          <ul>
+            <li>Trained on YOUR recorded session with Martin</li>
+            <li>Knows your specific roles, reactions, and beliefs</li>
+            <li>Uses your language and references your story</li>
+            <li>Builds on breakthroughs from your actual session</li>
+            <li>Feels like continuing a real coaching conversation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: HOW IT WORKS — LIGHT -->
+  <section class="section section-assessment">
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-heading">From Discovery Session to Daily Support</h2>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-icon">01</div>
+          <h3>Your Discovery Session</h3>
+          <p>
+            A recorded 2-hour conversation with Martin. We map your specific patterns,
+            challenges, and breakthroughs. This becomes your coaching foundation.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="step-icon">02</div>
+          <h3>AI Analysis & Training</h3>
+          <p>
+            The AI analyzes your session deeply. It learns your language, your specific
+            obstacles, your unique patterns, and your breakthrough moments.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="step-icon">03</div>
+          <h3>Your Personal Coach Goes Live</h3>
+          <p>
+            You receive an AI companion that knows YOUR story. Trained on Martin's
+            methodology, but calibrated to you — your challenges, your language, your path.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="step-icon">04</div>
+          <h3>24/7 Coaching Support</h3>
+          <p>
+            Daily check-ins. Guided exercises. On-demand coaching. Martin's framework
+            available whenever you need it — at 2am, before a hard conversation, in the
+            middle of a decision.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: PRICING — WARM -->
+  <section class="section section-offers">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+        <div class="section-label" style="text-align: center;">Investment</div>
+        <h2 class="section-heading">Personal AI Coach</h2>
+        <p style="font-family: var(--font-serif); font-size: 2.5rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">$1,997</p>
+        <p style="font-size: 1rem; color: var(--text-dark-muted); margin-bottom: 2rem;">Setup fee + $50/month for ongoing AI coaching access</p>
+        <p class="section-intro" style="margin-left: auto; margin-right: auto;">
+          Includes your 2-hour Discovery Session with Martin (recorded and analyzed),
+          your personal AI coach trained on your specific patterns, daily check-ins,
+          guided exercises, and full credit toward upgrading to 1:1 coaching.
+        </p>
+        <a href="/pages/work-with-me.html#book" class="btn btn-primary">Book Your Discovery Session to Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: CLIENT PORTAL — LIGHT -->
+  <section class="section section-assessment">
+    <div class="container">
+      <div class="section-label">Existing Client</div>
+      <h2 class="section-heading">Client Portal</h2>
+      <p class="section-intro" style="text-align: center; margin-bottom: 3rem;">
+        Access your personal AI coaching companion
+      </p>
+
+      <div class="login-card">
+        <h3>Sign In</h3>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="your@email.com" disabled style="background: rgba(26, 26, 26, 0.05); cursor: not-allowed;">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="••••••••" disabled style="background: rgba(26, 26, 26, 0.05); cursor: not-allowed;">
+        </div>
+
+        <button class="btn btn-primary" disabled style="opacity: 0.5; cursor: not-allowed;">Sign In</button>
+
+        <div class="login-note">
+          Portal login coming soon. Your AI coach access is set up after your Discovery Session with Martin.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: FINAL CTA — DARK -->
+  <section class="section section-testimonial">
+    <div class="hero-marble-overlay"></div>
+    <div class="container">
+      <h2 class="section-heading">Not Sure Which Path Is Right?</h2>
+      <p class="section-intro" style="color: var(--text-light); max-width: 700px;">
+        Start with the free assessment. It will show you where the misalignment lives
+        and help you decide what level of support makes sense.
+      </p>
+      <div class="hero-ctas" style="margin-top: 3rem;">
+        <a href="/pages/assessment.html" class="btn btn-primary">Take the Free Assessment</a>
+        <a href="/pages/work-with-me.html#book" class="btn btn-secondary">Book a Free Discovery Session</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Martin Ruof</span>
+          <p class="footer-tagline">Executive Coaching & Identity Alignment</p>
+          <p class="footer-philosophy">"You're not broken. You're buried. Let's set you free."</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="/pages/about.html">About Martin</a></li>
+            <li><a href="/pages/work-with-me.html">Work With Me</a></li>
+            <li><a href="/pages/assessment.html">Free Assessment</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/ai-coach.html">AI Coach Portal</a></li>
+          </ul>
+        </div>
+        <div class="footer-connect">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://instagram.com/martinruof" target="_blank">Instagram</a></li>
+            <li><a href="https://linkedin.com/in/martinruof" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:martin@martinruof.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Martin Ruof Enterprises. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
